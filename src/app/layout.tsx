@@ -17,7 +17,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <body className={inter.className}>
       <Box>
         <Header/>
-        <Box sx={{overflowY: "auto"}}>{children}</Box>
+        <Box sx={{overflowY: "auto"}} minHeight={"100vh"}>{children}</Box>
         <Footer/>
       </Box>
       </body>

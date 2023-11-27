@@ -51,9 +51,9 @@ export default function Header(props: Props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
-        <Box height={"10vh"}>
-            <AppBar component="nav">
-                <Toolbar>
+        <Box minHeight={"10vh"}>
+            <AppBar component="nav" sx={{backgroundColor: "#141414", minHeight: "10vh"}}>
+                <Toolbar sx={{height: "100%"}}>
                     <IconButton
                         color="inherit"
                         aria-label="open drawer"
